@@ -170,7 +170,7 @@ class Speler extends Code {
 			Regels.achtstevergelijking();
 
 			System.out.println(spelerinvoer + "    On the right spot: " + dezelfdeplek + "    In the row: " + inderij
-					+ "    Attempts: " + beurten);
+					+ "    Attempts left: " + beurten);
 			if (dezelfdeplek == 4) {
 				System.out.println(" ");
 				System.out.println(
@@ -182,6 +182,14 @@ class Speler extends Code {
 			beurten--;
 
 		}
+		System.out.println(" ");
+		System.out.println("You have been dumped! Your girlfriend is getting crazy cramps in this tiny box ... ");
+		System.out.println("You did not crack the code in all your 12 attempts.");
+		System.out.print("The code was: ");
+		System.out.print(Code.teraden[0]);
+		System.out.print(Code.teraden[1]);
+		System.out.print(Code.teraden[2]);
+		System.out.println(Code.teraden[3]);
 	}
 }
 
